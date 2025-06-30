@@ -10,6 +10,7 @@ const schema = new mongoose.Schema({
   pet: {
     type: mongoose.SchemaTypes.ObjectId,
     ref: "Pets",
+    unique: true
   },
 });
 
